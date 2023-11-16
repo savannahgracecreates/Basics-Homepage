@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///Users/anamejia/Desktop/homepage.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savannah's Coded Homepage</title>
+    <style>
+      body {
+        background-color: #74bec3;
+      }
+      .two-column-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 100px 240px 0px 240px;
+        margin: 0 auto;
+      }
+      a {
+        text-decoration: none;
+      }
+      h1 {
+        font-family: "open sans";
+        text-align: left;
+        color: #f5f0ed;
+        font-size: 48px;
+        font-weight: 550px;
+        margin-bottom: 10px;
+      }
+      .rectangle {
+        width: px;
+        height: 1px;
+        background-color: #f09d51;
+        border: 0;
+        position: relative;
+      }
+      h2 {
+        font-family: "source sans", sans-serif;
+        text-align: left;
+        color: #f5f0ed;
+        font-size: 22px;
+        font-weight: 150;
+        margin-top: 5px;
+      }
+      .savFont {
+        font-family: "source sans", sans-serif;
+        text-align: left;
+        color: #f5f0ed;
+        font-size: 22px;
+        font-weight: 250;
+      }
+      h3 {
+        font-family: "open sans", sans-serif;
+        text-align: center;
+        color: #f5f0ed;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 70px 50px 5px 50px;
+        margin-bottom: 5px;
+      }
+      .projects {
+        color: #f5f0ed;
+        transition: all 100ms ease-in-out;
+        box-shadow: none !important;
+        margin: auto;
+        padding: 13px 70px;
+        font-size: 20px;
+        font-family: "open sans";
+        text-align: left;
+        color: #f5f0ed;
+        background-color: #f09d51;
+        border-width: 0px;
+        border-radius: 200px;
+      }
+      .projects:hover {
+        background-color: #f09d51;
+        font-size: 23px;
+        text-align: center;
+        color: #f5f0ed;
+      }
+      .impressedButton {
+        display: block;
+        margin: auto;
+        text-align: center;
+        transition: all 100ms ease-in-out;
+        padding: 15px 30px;
+        font-size: 14px;
+        font-family: "open sans";
+        font-weight: 300;
+        color: #f5f0ed;
+        background-color: #a6b195;
+        border-color: none;
+        border-width: 0px;
+        border-radius: 200px;
+        text-decoration: none;
+      }
+      .impressedButton:hover {
+        background-color: #a6b195;
+        font-size: 16px;
+        text-align: center;
+      }
+      .footer {
+        font-family: "open sans";
+        text-align: center;
+        font-weight: 100;
+        color: #f5f0ed;
+        font-size: 10px;
+        padding: 80px 10px 0px 10px;
+      }
+      .opinion {
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-family: "open sans";
+        font-weight: 100;
+        color: #f5f0ed;
+        font-size: 9px;
+        background-color: #f09d51;
+        border-color: none;
+        border-width: 0px;
+        border-radius: 7px;
+        padding: 3px 3px;
+      }
+
+      .opinion:hover {
+        background-color: #f09d51;
+        font-size: 10px;
+        text-align: center;
+        color: #f5f0ed;
+      }
+
+      .rectangle-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 400px;
+      }
+      .rectangleOne {
+        width: 400px;
+        height: 120px;
+        background-color: #f5f0ed;
+        border: 0;
+        border-radius: 200px;
+        margin: 0 20px;
+      }
+      .rectangleTwo {
+        width: 400px;
+        height: 130px;
+        background-color: #f09d51;
+        border-radius: 200px;
+        border: 0;
+        margin: 0 20px;
+      }
+      .image-overlay {
+        position: absolute;
+        top: calc(50% - 146px);
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 90px;
+        width: 400px;
+        height: 400px;
+        max-width: 100%;
+        z-index: 1;
+      }
+      #fadeInHeading {
+        opacity: 0;
+        transform: translateX(100%);
+        animation: fadeInFromRight 1.5s ease-out forwards;
+      }
+      @keyframes fadeInFromRight {
+        from {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        .appear-from-right {
+          opacity: 0;
+          transform: translateX(100%);
+          animation: fadeInFromRight 1s ease-out forwards;
+        }
+      }
+    </style>
+    
+  </head>
+  <body>
+
+
+    <div class="two-column-container">
+      <div class="text">
+        <h1 id="fadeInHeading">
+          creative solutions<br />
+          based on <span class="rectangle">research</span>
+        </h1>
+        <h2>
+          Hey! I'm
+          <span class="savFont">Savannah</span>
+          <br />As a lifelong artist, I offer creative solutions to meet your needs.
+        </h2>
+        <br />
+        <a href="https://www.savannahgracecreative.com/savannahgracecreative" target="_blank">
+          <button class="projects" type="button">show me</button>
+        </a>
+      </div>
+      <div class="rectangle-container appear-from-right">
+        <div class="rectangleOne"></div>
+        <div class="rectangleTwo"></div>
+        <img
+          class="image-overlay"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/204/original/sgclandingimage_%281%29.png?1700149520"
+          alt="Photo of Savannah"
+        />
+        <img />
+      </div>
+    </div>
+    <h3>
+      What do I have to offer?
+      <br />Graphic Design, Fine Art, Photography, Spanish Translation... 
+      <br /> I'm still working on my list!
+    </h3>
+    <a href="https://www.savannahgracecreative.com/aboutsgc" target="_blank">
+      <button class="impressedButton" type="button">learn more about me</button>
+    </a>
+    <p class="footer">
+      This page was built by Savannah Young | 2023
+    </p>
+    <button class="opinion" type="button">👉🏼tell me what you think</button>
+    <script>
+      function opinion() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let positive = prompt("What did you like about this landing page?");
+        let negative = prompt("What did you dislike?");
+        alert(
+          "Thank you " +
+            name +
+            "! If I have any more questions about your feedback I will reach out!"
+        );
+      }
+
+      let opinionButton = document.querySelector(".opinion");
+      opinionButton.addEventListener("click", opinion);
+
+      const rectangleContainer = document.querySelector(".appear-from-right");
+
+      window.addEventListener("load", () => {
+        rectangleContainer.style.opacity = 1;
+        rectangleContainer.style.transform = "translateX(0)";
+      });
+    </script>
+  </body>
+</html>
